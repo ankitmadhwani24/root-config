@@ -24,5 +24,9 @@ module.exports = (webpackConfigEnv, argv) => {
         },
       }),
     ],
+    output: {
+      filename: '[name].[contenthash].js',
+      clean: true
+  	}
   });
 };
